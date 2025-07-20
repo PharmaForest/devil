@@ -7,6 +7,8 @@ Welcome to DEVIL (Developer's Ideas Library)!
 
 ## 1. %chatDMS() :  
 Chat application in SAS DMS(Display Management System) for those who cannot afford Viya Copilot😂  
+This is available only for DMS. You need your API key for openAI or google to use the app.  
+
 Sample code:
 ~~~sas
 %chatDMS(
