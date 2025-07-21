@@ -45,6 +45,7 @@ Date: 2025-07-22
 Version: 0.1  
 
 ## Version history  
+0.0.2(22July2025)	: Add text2morse function
 0.0.1(21July2025)	: Initial version
 
 ## What is SAS Packages?
