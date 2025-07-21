@@ -16,7 +16,10 @@ Sample code:
   model=gemini-1.5-flash,    /* Model information */
   apikey=xxxxxxxxxxxxxxx,    /* API key */
   max_tokens=512)            /* Max token */
-~~~
+~~~  
+Author: Ryo Nakaya  
+Date: 2025-07-21  
+Version: 0.1  
 
 ## Version history  
 0.0.1(21July2025)	: Initial version
