@@ -23,7 +23,7 @@ Version: 0.1
 
 ## 2. text2morse() : Function 
 text2morse is a function that converts text to Morse code.
-
+<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/text2morse_mini.png?raw=true" alt="logo" width="100"/>
 Sample code:
 ~~~sas
 data test;
