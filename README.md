@@ -37,7 +37,9 @@ data a;
 set test;
 y = text2morse(x);
 run;
-~~~  
+~~~
+<img width="465" height="55" alt="Image" src="https://github.com/user-attachments/assets/2133addd-9188-461f-b201-73fabc368883" />  
+
 Author: Yutaka Morioka  
 Date: 2025-07-22  
 Version: 0.1  
