@@ -9,17 +9,17 @@
 ### Version information:
   
 - Package: devil
-- Version: 0.0.1
-- Generated: 2025-07-21T00:53:09
+- Version: 0.0.2
+- Generated: 2025-07-22T06:03:21
 - Author(s): Any Developers
 - Maintainer(s): [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
 - License: MIT
-- File SHA256: `F*5B766B664560F260FAEB943B3DA3FCBAF02D39368DEFEB796ACF84690AE12A4F` for this version
-- Content SHA256: `C*F2FCC89AE7168F248E89A05AC30249644F458F0FE08704619F026FE4663EADA8` for this version
+- File SHA256: `F*7B615FB5114C514AD3171296483A8F0FA27AAC59BE087CB9906EAD3C31BE6F4C` for this version
+- Content SHA256: `C*FC8961F0280FBF4C32236FCAE4EF93585108542EE74A80C58D7CC44966E1F246` for this version
   
 ---
  
-# The `devil` package, version: `0.0.1`;
+# The `devil` package, version: `0.0.2`;
   
 ---
  
@@ -46,21 +46,34 @@ Required SAS Components:
 # The `devil` package content
 The `devil` package consists of the following content:
  
-1. [`%chatdms()` macro ](#chatdms-macros-1 )
+1. [`text2morse()` function ](#text2morse-functions-1 )
+2. [`%chatdms()` macro ](#chatdms-macros-2 )
   
  
-2. [License note](#license)
+3. [License note](#license)
   
 ---
  
-## `%chatdms()` macro <a name="chatdms-macros-1"></a> ######
+## `text2morse()` function <a name="text2morse-functions-1"></a> ######
+
+text2morse is a function that converts text to Morse code.
+options cmplib=work.f ; is required prior to f1 is used.
+
+  
+---
+ 
+## `%chatdms()` macro <a name="chatdms-macros-2"></a> ######
 
 This is macro to chat with LLMs(openAI / Google) in SAS DMS(Display Management System) for who cannot afford Viya Copilot. This is actually like Rshiny application which creates window for prompt and you can receive responses from LLMs in log window.
 
 Parameters:
+
 - provider: openAI or google
+
 - model : please specify(e.g. gemini-1.5-flash, gpt-3.5-turbo)
+
 - apikey : please input
+
 - max_tokens : 512 (default)
 
   
@@ -72,23 +85,20 @@ Parameters:
 # License <a name="license"></a> ######
  
 Copyright (c) [2025]  [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy   
-of this software and associated documentation files (the "Software"), to deal    
-in the Software without restriction, including without limitation the rights   
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell   
-copies of the Software, and to permit persons to whom the Software is   
-furnished to do so, subject to the following conditions:                      
-                                                                                
-The above copyright notice and this permission notice shall be included       
-in all copies or substantial portions of the Software.                        
-                                                                                
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR    
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,      
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE   
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER        
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
   
 ---
