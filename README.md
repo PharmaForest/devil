@@ -1,4 +1,4 @@
-# devil (latest version 0.0.1 on 21July2025)
+# devil (latest version 0.0.2 on 22July2025)
 Welcome to DEVIL (Developer's Ideas Library)!  
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
@@ -19,6 +19,27 @@ Sample code:
 ~~~  
 Author: Ryo Nakaya  
 Date: 2025-07-21  
+Version: 0.1  
+
+## 2. text2morse() : Function 
+text2morse is a function that converts text to Morse code.
+
+Sample code:
+~~~sas
+data test;
+length x $200.;
+x = "I M  WITH YOU ";output;/*Captain America: The First Avenger*/
+x = "STAY";output; /*Interstellar*/
+x = "SO HOPING";output; /*Parasite*/
+run;
+
+data a;
+set test;
+y = text2morse(x);
+run;
+~~~  
+Author: Yutaka Morioka  
+Date: 2025-07-22  
 Version: 0.1  
 
 ## Version history  
