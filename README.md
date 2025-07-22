@@ -62,6 +62,7 @@ Simulates Conway's Game of Life in SAS and generates an animated GIF output. Use
    ds            - Optional input dataset to use as the initial grid. If not provided,
                    a random grid will be generated.
 ~~~
+
 Sample code:
  ~~~sas
    %life_game(outpath=D:\Users\Example\Output, outfilename=mygame, loop=100, xwide=60, ywide=60);
