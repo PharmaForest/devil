@@ -51,6 +51,26 @@ If you're tired of work, watch Life Game and reevaluate your life.
 ![Image](https://github.com/user-attachments/assets/c15206ef-7240-4229-8505-4955297f1b86)  
 Simulates Conway's Game of Life in SAS and generates an animated GIF output. Uses a grid of cells initialized randomly or from an input dataset, applies the life game rules iteratively, and visualizes the process as a heatmap animation.
 
+ Parameters  :  
+ ~~~text
+   outpath       - File path to save the output GIF.
+   outfilename   - Name of the output GIF file (default: lifegame).
+   seed          - Random seed for initial cell generation (default: 777).
+   loop          - Number of iterations (animation frames) to simulate (default: 50).
+   xwide         - Width of the grid (default: 50).
+   ywide         - Height of the grid (default: 50).
+   ds            - Optional input dataset to use as the initial grid. If not provided,
+                   a random grid will be generated.
+~~~
+Sample code:
+ ~~~sas
+   %life_game(outpath=D:\Users\Example\Output, outfilename=mygame, loop=100, xwide=60, ywide=60);
+~~~
+Author: Yutaka Morioka  
+Date: 2025-07-23  
+Version: 0.1 
+
+
 ## Version history  
 0.0.3(23July2025)	: Add %life_game()  
 0.0.2(22July2025)	: Add text2morse function  
