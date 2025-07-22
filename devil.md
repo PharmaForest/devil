@@ -9,17 +9,17 @@
 ### Version information:
   
 - Package: devil
-- Version: 0.0.2
-- Generated: 2025-07-22T06:03:21
+- Version: 0.0.3
+- Generated: 2025-07-23T07:40:25
 - Author(s): Any Developers
 - Maintainer(s): [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
 - License: MIT
-- File SHA256: `F*7B615FB5114C514AD3171296483A8F0FA27AAC59BE087CB9906EAD3C31BE6F4C` for this version
-- Content SHA256: `C*FC8961F0280FBF4C32236FCAE4EF93585108542EE74A80C58D7CC44966E1F246` for this version
+- File SHA256: `F*DF5C0588494B2BCB674AC4590BBB1A62DBB2FE48976EA6EFFC4B1B6FF281158C` for this version
+- Content SHA256: `C*0A6FAF9027D51DFE8B349F3FCB29079325CBBC556D4E5861E25A83E789D97FBE` for this version
   
 ---
  
-# The `devil` package, version: `0.0.2`;
+# The `devil` package, version: `0.0.3`;
   
 ---
  
@@ -48,9 +48,10 @@ The `devil` package consists of the following content:
  
 1. [`text2morse()` function ](#text2morse-functions-1 )
 2. [`%chatdms()` macro ](#chatdms-macros-2 )
+3. [`%life_game()` macro ](#lifegame-macros-3 )
   
  
-3. [License note](#license)
+4. [License note](#license)
   
 ---
  
@@ -75,6 +76,41 @@ Parameters:
 - apikey : please input
 
 - max_tokens : 512 (default)
+
+  
+---
+ 
+## `%life_game()` macro <a name="lifegame-macros-3"></a> ######
+
+Program     : %life_game
+ Description : Simulates Conway's Game of Life in SAS and generates an animated GIF output.
+               Uses a grid of cells initialized randomly or from an input dataset, applies 
+               the life game rules iteratively, and visualizes the process as a heatmap animation.
+
+ Author      : Yutaka Morioka
+  License : MIT 
+
+ Parameters  :
+   outpath       - File path to save the output GIF.
+   outfilename   - Name of the output GIF file (default: lifegame).
+   seed          - Random seed for initial cell generation (default: 777).
+   loop          - Number of iterations (animation frames) to simulate (default: 50).
+   xwide         - Width of the grid (default: 50).
+   ywide         - Height of the grid (default: 50).
+   ds            - Optional input dataset to use as the initial grid. If not provided,
+                   a random grid will be generated.
+
+ Output      :
+   Animated GIF file showing the evolution of the Game of Life simulation.
+
+ Notes       :
+ - The initial grid is either randomly generated or taken from the specified dataset.
+ - Each cell's state is updated based on the standard rules of Conway's Game of Life.
+ - The macro uses SAS hash objects to efficiently access neighbor cells.
+ - The animation is rendered using PROC SGPLOT with heatmap visualization.
+
+ Usage Example:
+   %life_game(outpath=D:\Users\Example\Output, outfilename=mygame, loop=100, xwide=60, ywide=60);
 
   
 ---
