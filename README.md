@@ -47,6 +47,7 @@ Version: 0.1
 ## 3. %life_game() :  
 <img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/life_game.png?raw=true" alt="logo" width="150"/>  
 If you're tired of work, watch Life Game and reevaluate your life.  
+
 ![Image](https://github.com/user-attachments/assets/c15206ef-7240-4229-8505-4955297f1b86)
 
 Simulates Conway's Game of Life in SAS and generates an animated GIF output. Uses a grid of cells initialized randomly or from an input dataset, applies the life game rules iteratively, and visualizes the process as a heatmap animation.
