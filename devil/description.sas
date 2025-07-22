@@ -1,7 +1,7 @@
 Type : Package
 Package : devil
 Title : Developer's Ideas Library
-Version : 0.0.2
+Version : 0.0.3
 Author : Any Developers
 Maintainer : [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
 License : MIT
