@@ -1,4 +1,4 @@
-# devil (latest version 0.0.2 on 22July2025)
+# devil (latest version 0.0.3 on 23July2025)
 Welcome to **DEVIL (Developer's Ideas Library)!**  
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
@@ -44,7 +44,13 @@ Author: Yutaka Morioka
 Date: 2025-07-22  
 Version: 0.1  
 
+## 3. %life_game() :  
+If you're tired of work, watch Life Game and reevaluate your life.
+<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/life_game.png?raw=true" alt="logo" width="150"/>  
+Simulates Conway's Game of Life in SAS and generates an animated GIF output. Uses a grid of cells initialized randomly or from an input dataset, applies the life game rules iteratively, and visualizes the process as a heatmap animation.
+
 ## Version history  
+0.0.3(23July2025)	: Add %life_game()  
 0.0.2(22July2025)	: Add text2morse function  
 0.0.1(21July2025)	: Initial version
 
