@@ -45,6 +45,7 @@ Date: 2025-07-22
 Version: 0.1  
 
 ## 3. %life_game() :  
+<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/life_game.fig?raw=true" alt="logo" width="150"/>  
 <img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/life_game.png?raw=true" alt="logo" width="150"/>  
 If you're tired of work, watch Life Game and reevaluate your life.  
 
