@@ -1,5 +1,5 @@
 # devil (latest version 0.0.2 on 22July2025)
-Welcome to DEVIL (Developer's Ideas Library)!  
+Welcome to **DEVIL (Developer's Ideas Library)!**  
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
 
