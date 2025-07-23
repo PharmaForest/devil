@@ -8,7 +8,7 @@ Welcome to **DEVIL (Developer's Ideas Library)!**
 *Devil package is said to be an ancient SAS package that has existed for 400 years. Within it dwell unseen devils, ready to threaten the world. It is said to have the power to summon them—or even lock up your own devils. (Just kidding!)*  
 
 ## 1. %chatDMS() :  
-Chat application in SAS DMS(Display Management System) for those who cannot afford Viya Copilot😂  
+Chat application in SAS DMS(Display Manager System) for those who cannot afford Viya Copilot😂  
 This is available only for DMS. You need your API key for openAI or google to use the app.  
 
 Sample code:
