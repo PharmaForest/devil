@@ -1,4 +1,4 @@
-# devil (latest version 0.0.3 on 23July2025)
+# devil (latest version 0.0.4 on 25July2025)
 Welcome to **DEVIL (Developer's Ideas Library)!**  
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
@@ -73,10 +73,55 @@ Author: Yutaka Morioka
 Date: 2025-07-23  
 Version: 0.1 
 
+## 4. %sudoku_solver()
+
+Sudoku solver is finally in SAS!  
+
+Parameters :
+~~~text
+  puzzle=     : the Sudoku puzzle converted into a SAS dataset (Refer to the following 'prerequisites' section!)  
+  outputpath= : the directory where the results are output (LOG file or RTF file when rtfYN=Y)  
+  rtfYN=      : Default is N. If you change this parameter to Y, an RTF output will be created in 'outputpath'.  
+~~~
+
+Sample code :  
+~~~sas
+%sudoku_solver(
+    puzzle=__sudoku__,  
+    outputpath=/home/XXXXX/sudoku/, 
+    rtfYN=Y
+   )
+/*example data*/
+data sudoku1;
+ input c1-c9 8.;
+ cards;
+0 0 2 3 0 0 5 0 0
+4 0 0 0 8 0 0 1 0
+0 0 9 0 0 4 0 0 6
+0 2 0 0 7 0 1 0 8
+6 0 0 5 0 9 0 0 3
+1 0 3 0 4 0 0 7 0
+9 0 0 8 0 0 2 0 0
+0 8 0 0 6 0 0 0 9
+0 0 7 0 0 1 3 0 0
+;
+~~~
+
+### Other
+ - "Sudoku" is a registered trademark of Nikoli. (https://www.nikoli.co.jp/ja/puzzles/sudoku/)
+ - The maximum number of backtracks is set to 50,000. 
+ - This is because most Sudoku puzzles can be solved within 50,000 backtracks.
+ - If there is a request to specify the number of backtracks in the macro parameter, I will consider it:)
+ 
+Author:      Miyuki Aso  
+Date:        2025-07-25  
+Version:     0.1
+
 
 ## Version history  
-0.0.3(23July2025)	: Add %life_game()  
-0.0.2(22July2025)	: Add text2morse function  
+0.0.4(25July2025) : Added %sudoku_solver()  
+0.0.3(23July2025)	: Added %life_game()  
+0.0.2(22July2025)	: Added text2morse function  
 0.0.1(21July2025)	: Initial version
 
 ## What is SAS Packages?
