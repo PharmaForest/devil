@@ -9,17 +9,17 @@
 ### Version information:
   
 - Package: devil
-- Version: 0.0.3
-- Generated: 2025-07-23T07:40:25
+- Version: 0.0.4
+- Generated: 2025-07-25T17:04:23
 - Author(s): Any Developers
 - Maintainer(s): [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
 - License: MIT
-- File SHA256: `F*DF5C0588494B2BCB674AC4590BBB1A62DBB2FE48976EA6EFFC4B1B6FF281158C` for this version
-- Content SHA256: `C*0A6FAF9027D51DFE8B349F3FCB29079325CBBC556D4E5861E25A83E789D97FBE` for this version
+- File SHA256: `F*546350CB550F023AD5CB0C3A294C3FF8CC8F247136A8CCC3D956693B5AA807F3` for this version
+- Content SHA256: `C*C97B45459E568E2373F4A5DF29E3D1EB75B7312CB71259EE7D0185C58CA30047` for this version
   
 ---
  
-# The `devil` package, version: `0.0.3`;
+# The `devil` package, version: `0.0.4`;
   
 ---
  
@@ -49,9 +49,10 @@ The `devil` package consists of the following content:
 1. [`text2morse()` function ](#text2morse-functions-1 )
 2. [`%chatdms()` macro ](#chatdms-macros-2 )
 3. [`%life_game()` macro ](#lifegame-macros-3 )
+4. [`%sudoku_solver()` macro ](#sudokusolver-macros-4 )
   
  
-4. [License note](#license)
+5. [License note](#license)
   
 ---
  
@@ -68,13 +69,9 @@ options cmplib=work.f ; is required prior to f1 is used.
 This is macro to chat with LLMs(openAI / Google) in SAS DMS(Display Management System) for who cannot afford Viya Copilot. This is actually like Rshiny application which creates window for prompt and you can receive responses from LLMs in log window.
 
 Parameters:
-
 - provider: openAI or google
-
 - model : please specify(e.g. gemini-1.5-flash, gpt-3.5-turbo)
-
 - apikey : please input
-
 - max_tokens : 512 (default)
 
   
@@ -111,6 +108,57 @@ Program     : %life_game
 
  Usage Example:
    %life_game(outpath=D:\Users\Example\Output, outfilename=mygame, loop=100, xwide=60, ywide=60);
+
+  
+---
+ 
+## `%sudoku_solver()` macro <a name="sudokusolver-macros-4"></a> ######
+
+Here is the explanation of %sudoku_solver.
+
+### Sample code
+puzzle=     : the Sudoku puzzle converted into a SAS dataset (Refer to the following 'prerequisites' section!)
+outputpath= : the directory where the results are output (LOG file or RTF file when rtfYN=Y)
+rtfYN=      : Default is N. If you change this parameter to Y, an RTF output will be created in 'outputpath'.
+~~~sas
+%sudoku_solver(
+    puzzle=__sudoku__, 
+    outputpath=/home/XXXXX/sudoku/, 
+    rtfYN=Y
+   )
+~~~
+
+### prerequisites
+ <For input data> 
+ Please convert the Sudoku puzzle you want to solve into a dataset as shown in the example below.
+ (It must be SAS dataset with 9 numeric variables (c1-c9) and 9 observations.)
+ Note: 
+  - Fill the blank spaces in the puzzle with 0. 
+  - Make sure to name the variables strictly as c1-c9, but the dataset name can be anything.
+ 
+data sudoku1;
+ input c1-c9 8.;
+ cards;
+0 0 2 3 0 0 5 0 0
+4 0 0 0 8 0 0 1 0
+0 0 9 0 0 4 0 0 6
+0 2 0 0 7 0 1 0 8
+6 0 0 5 0 9 0 0 3
+1 0 3 0 4 0 0 7 0
+9 0 0 8 0 0 2 0 0
+0 8 0 0 6 0 0 0 9
+0 0 7 0 0 1 3 0 0
+;
+
+### Other
+ - "Sudoku" is a registered trademark of Nikoli. (https://www.nikoli.co.jp/ja/puzzles/sudoku/)
+ - The maximum number of backtracks is set to 50,000. 
+ - This is because most Sudoku puzzles can be solved within 50,000 backtracks.
+ - If there is a request to specify the number of backtracks in the macro parameter, I will consider it:)
+ 
+* Author:      Miyuki Aso
+* Date:        2025-07-25
+* Version:     0.1
 
   
 ---
