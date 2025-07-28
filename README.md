@@ -3,7 +3,7 @@ Welcome to **DEVIL (Developer's Ideas Library)!**
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
 
-**Share your devils (any ideas at any stage)** for trial, inspiring, showing-off, recruiting members for further development by showing POC, or even joking(for fun). You can see in description.sas of devil package that author is "Any Developers". Devil package is completely different from the other packages in PharmaForest **with its highly collaborative nature to welcome any ideas from anyone** regardless of usefulness(we would rather prefer playful ones😁). First devils are provided in advance for reference. Knock the door of devil.  
+**Share your devils (any ideas at any stage)** for trial, inspiring, showing-off, recruiting members for further development by showing POC, or even joking(for fun). You can see in description.sas of devil package that author is "Any Developers". Devil package is completely different from the other packages in PharmaForest **with its highly collaborative nature to welcome any ideas from anyone** regardless of usefulness(we would rather prefer playful ones😁). Let's take a break, Knock the door of devil!  
 
 *Devil package is said to be an ancient SAS package that has existed for 400 years. Within it dwell unseen devils, ready to threaten the world. It is said to have the power to summon them—or even lock up your own devils. (Just kidding!)*  
 
