@@ -107,6 +107,8 @@ data sudoku1;
 ;
 ~~~
 
+<img src="https://github.com/PharmaForest/devil/blob/main/sudoku.png?raw=true" alt="sudoku" width="300"/>
+
 ### Other
  - "Sudoku" is a registered trademark of Nikoli. (https://www.nikoli.co.jp/ja/puzzles/sudoku/)
  - The maximum number of backtracks is set to 50,000. 
