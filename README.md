@@ -20,8 +20,8 @@ Sample code:
   max_tokens=512)            /* Max token */
 ~~~  
 Author: Ryo Nakaya  
-Date: 2025-07-21  
-Version: 0.1  
+Date: 2025-07-31  
+Version: 0.2  
 
 ## 2. text2morse() : Function 
 text2morse is a function that converts text to Morse code.  
