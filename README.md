@@ -1,4 +1,4 @@
-# devil (latest version 0.0.4 on 25July2025)
+# devil (latest version 0.0.5 on 31July2025)
 Welcome to **DEVIL (Developer's Ideas Library)!**  
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
@@ -121,6 +121,7 @@ Version:     0.1
 
 
 ## Version history  
+0.0.5(31July2025) : modified code of extracting response in json for %chatDMS()  
 0.0.4(25July2025) : Added %sudoku_solver()  
 0.0.3(23July2025)	: Added %life_game()  
 0.0.2(22July2025)	: Added text2morse function  
