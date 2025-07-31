@@ -19,6 +19,9 @@ Sample code:
   apikey=xxxxxxxxxxxxxxx,    /* API key */
   max_tokens=512)            /* Max token */
 ~~~  
+
+<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/chat.png?raw=true" alt="chat" width="300"/>
+
 Author: Ryo Nakaya  
 Date: 2025-07-31  
 Version: 0.2  
@@ -107,7 +110,7 @@ data sudoku1;
 ;
 ~~~
 
-<img src="https://github.com/PharmaForest/devil/blob/main/sudoku.png?raw=true" alt="sudoku" width="300"/>
+<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/sudoku.png?raw=true" alt="sudoku" width="300"/>
 
 ### Other
  - "Sudoku" is a registered trademark of Nikoli. (https://www.nikoli.co.jp/ja/puzzles/sudoku/)
