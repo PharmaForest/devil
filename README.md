@@ -20,7 +20,7 @@ Sample code:
   max_tokens=512)            /* Max token */
 ~~~  
 
-<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/chat.png?raw=true" alt="chat" width="300"/>
+<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/chat.png?raw=true" alt="chat" width="350"/>
 
 Author: Ryo Nakaya  
 Date: 2025-07-31  
