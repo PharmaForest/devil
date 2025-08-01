@@ -9,17 +9,17 @@
 ### Version information:
   
 - Package: devil
-- Version: 0.0.5
-- Generated: 2025-07-31T11:26:03
+- Version: 0.0.6
+- Generated: 2025-08-01T11:09:45
 - Author(s): Any Developers
 - Maintainer(s): [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
 - License: MIT
-- File SHA256: `F*7A54BBF562F6645D144EE915117AFE61EC95148DC0F1EC80FCB6A533200D6ABB` for this version
-- Content SHA256: `C*8B1DB0AC6B8CB2A15594779D87F0D8A6603DF350E40F9C4F7C1E1906E70248AF` for this version
+- File SHA256: `F*E581FBACDB4430F2ABD2C850513DAE9314D602C85A87A7E41A7CE709D00C1992` for this version
+- Content SHA256: `C*625587EF40C9926BA358BCCCA1966FD8CFFA1D1C6D4AD197D5F88BD3077DB0EF` for this version
   
 ---
  
-# The `devil` package, version: `0.0.5`;
+# The `devil` package, version: `0.0.6`;
   
 ---
  
@@ -66,11 +66,13 @@ options cmplib=work.f ; is required prior to f1 is used.
  
 ## `%chatdms()` macro <a name="chatdms-macros-2"></a> ######
 This is macro to chat with LLMs(openAI / Google) in SAS DMS(Display Management System) for who cannot afford Viya Copilot. This is actually like Rshiny application which creates window for prompt and you can receive responses from LLMs in log window.
+
 Parameters:
-- provider: openAI or google
+- provider: openAI / google / anthropic
 - model : please specify(e.g. gemini-1.5-flash, gpt-3.5-turbo)
 - apikey : please input
-- max_tokens : 512 (default)
+- max_tokens : 1024 (default)
+
   
 ---
  
