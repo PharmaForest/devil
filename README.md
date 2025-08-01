@@ -1,4 +1,4 @@
-# devil (latest version 0.0.5 on 31July2025)
+# devil (latest version 0.0.6 on 1August2025)
 Welcome to **DEVIL (Developer's Ideas Library)!**  
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
@@ -14,7 +14,7 @@ This is available only for DMS. You need your API key for openAI or google to us
 Sample code:
 ~~~sas
 %chatDMS(
-  provider=google,           /* AI provider(only openAI and Google available) */
+  provider=google,           /* AI provider(openAI / Google / Anthropic available) */
   model=gemini-1.5-flash,    /* Model information */
   apikey=xxxxxxxxxxxxxxx,    /* API key */
   max_tokens=512)            /* Max token */
@@ -23,8 +23,8 @@ Sample code:
 <img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/chat.png?raw=true" alt="chat" width="350"/>
 
 Author: Ryo Nakaya  
-Date: 2025-07-31  
-Version: 0.2  
+Date: 2025-08-01  
+Version: 0.3  
 
 ## 2. text2morse() : Function 
 text2morse is a function that converts text to Morse code.  
@@ -124,6 +124,7 @@ Version:     0.1
 
 
 ## Version history  
+0.0.6(1August2025) : Added Anthropic(Claude) in %chatDMS()  
 0.0.5(31July2025) : modified code of extracting response in json for %chatDMS()  
 0.0.4(25July2025) : Added %sudoku_solver()  
 0.0.3(23July2025)	: Added %life_game()  
