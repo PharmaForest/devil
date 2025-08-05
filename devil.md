@@ -9,17 +9,17 @@
 ### Version information:
   
 - Package: devil
-- Version: 0.0.6
-- Generated: 2025-08-01T11:09:45
+- Version: 0.0.7
+- Generated: 2025-08-05T09:11:25
 - Author(s): Any Developers
 - Maintainer(s): [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
 - License: MIT
-- File SHA256: `F*E581FBACDB4430F2ABD2C850513DAE9314D602C85A87A7E41A7CE709D00C1992` for this version
-- Content SHA256: `C*625587EF40C9926BA358BCCCA1966FD8CFFA1D1C6D4AD197D5F88BD3077DB0EF` for this version
+- File SHA256: `F*2B05572EDB5298BD1FF06CAA9B96FF1FD9143A7404FEB68CAAECB8BF07CAC21B` for this version
+- Content SHA256: `C*DA6358120C9BB14B45825D89658A0FE9C64C714D0B9335389DAC10A1AE3E918F` for this version
   
 ---
  
-# The `devil` package, version: `0.0.6`;
+# The `devil` package, version: `0.0.7`;
   
 ---
  
@@ -36,6 +36,11 @@ Required SAS Components:
   
 ---
  
+Required SAS Packages: 
+  - misc
+  
+---
+ 
  
 --------------------------------------------------------------------
  
@@ -48,11 +53,12 @@ The `devil` package consists of the following content:
  
 1. [`text2morse()` function ](#text2morse-functions-1 )
 2. [`%chatdms()` macro ](#chatdms-macros-2 )
-3. [`%life_game()` macro ](#lifegame-macros-3 )
-4. [`%sudoku_solver()` macro ](#sudokusolver-macros-4 )
+3. [`%hanabi()` macro ](#hanabi-macros-3 )
+4. [`%life_game()` macro ](#lifegame-macros-4 )
+5. [`%sudoku_solver()` macro ](#sudokusolver-macros-5 )
   
  
-5. [License note](#license)
+6. [License note](#license)
   
 ---
  
@@ -76,7 +82,18 @@ Parameters:
   
 ---
  
-## `%life_game()` macro <a name="lifegame-macros-3"></a> ######
+## `%hanabi()` macro <a name="hanabi-macros-3"></a> ######
+
+This macro is to celebrate something with fireworks!
+
+Parameters
+	- giffile: full path for gif file to create
+	- ite: iteration number from 1 to 151(record number of __color_list)
+
+  
+---
+ 
+## `%life_game()` macro <a name="lifegame-macros-4"></a> ######
 
 Program     : %life_game
  Description : Simulates Conway's Game of Life in SAS and generates an animated GIF output.
@@ -111,7 +128,7 @@ Program     : %life_game
   
 ---
  
-## `%sudoku_solver()` macro <a name="sudokusolver-macros-4"></a> ######
+## `%sudoku_solver()` macro <a name="sudokusolver-macros-5"></a> ######
 
 Here is the explanation of %sudoku_solver.
 
