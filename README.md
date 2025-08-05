@@ -123,7 +123,7 @@ Date:        2025-07-25
 Version:     0.1
 
 ## 5. %hanabi() :  
-To celebrate someone or something with fireworks(hanabi). 
+To celebrate someone or something with fireworks(hanabi).  
 The macro uses %color_swatch() in misc package, please install misc to use this.
 
 Sample code:
