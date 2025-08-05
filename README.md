@@ -1,4 +1,4 @@
-# devil (latest version 0.0.6 on 1August2025)
+# devil (latest version 0.0.7 on 5August2025)
 Welcome to **DEVIL (Developer's Ideas Library)!**  
 
 <img src="https://github.com/PharmaForest/devil/blob/main/devil_logo.png?raw=true" alt="logo" width="300"/>
@@ -122,8 +122,24 @@ Author:      Miyuki Aso
 Date:        2025-07-25  
 Version:     0.1
 
+## 5. %hanabi() :  
+To celebrate something with fireworks(hanabi). 
+
+Sample code:
+~~~sas
+%hanabi(
+  giffile=C:\temp\hanabi.gif,  /*path for gif file*/
+  ite=10)                      /*iteration(1-151)*/
+~~~  
+
+<img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/hanabi.gif?raw=true" alt="chat" width="350"/>
+
+Author:      Yutaka Morioka, Ryo Nakaya  
+Date:        2025-08-05  
+Version:     0.1
 
 ## Version history  
+0.0.7(5August2025) : Added %hanabi()  
 0.0.6(1August2025) : Added Anthropic(Claude) in %chatDMS()  
 0.0.5(31July2025) : modified code of extracting response in json for %chatDMS()  
 0.0.4(25July2025) : Added %sudoku_solver()  
