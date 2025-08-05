@@ -123,7 +123,7 @@ Date:        2025-07-25
 Version:     0.1
 
 ## 5. %hanabi() :  
-To celebrate something with fireworks(hanabi). 
+To celebrate someone or something with fireworks(hanabi). 
 
 Sample code:
 ~~~sas
