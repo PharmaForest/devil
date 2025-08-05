@@ -135,7 +135,7 @@ Sample code:
 
 <img src="https://github.com/PharmaForest/devil/blob/main/sub_logo/hanabi.gif?raw=true" alt="chat" width="350"/>
 
-Author:      Yutaka Morioka, Ryo Nakaya  
+Author:      Akira Matsuzawa，Yutaka Morioka, Ryo Nakaya  
 Date:        2025-08-05  
 Version:     0.1
 
