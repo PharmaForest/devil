@@ -1,13 +1,13 @@
 Type : Package
 Package : devil
 Title : Developer's Ideas Library
-Version : 0.0.6
+Version : 0.0.7
 Author : Any Developers
 Maintainer : [Yutaka Morioka],[Hiroki Yamanobe],[Ryo Nakaya]
 License : MIT
 Encoding : UTF8
 Required : "Base SAS Software"
-ReqPackages :  
+ReqPackages : "misc"  
 
 DESCRIPTION START:
 ## Welcome to Developer's Ideas Library(DEVIL) ##
